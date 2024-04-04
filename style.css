@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+main {
+  height: 150vh;
+  width: 100%;
+}
+nav {
+  width: 100%;
+  height: 7vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3vw;
+}
+.nav-1 {
+  font-size: 24px;
+}
+input {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.171);
+  outline: none;
+}
+.nav-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-2 i {
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.nav-3 i {
+  font-size: 18px;
+  position: relative;
+  z-index: 1000;
+  cursor: pointer;
+}
+.nav-3 .atc {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: -45%;
+  right: -70%;
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.nav-3 .atc p {
+  font-size: 10px;
+}
+
+.products .head {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.products .head h1 {
+  font-size: 4vw;
+}
+.products .head .btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  gap: 5%;
+}
+.products .head button {
+  border: 1px solid rgba(0, 0, 0, 0.301);
+  padding: 10px 40px;
+  border-radius: 50px;
+  outline: none;
+  background-color: transparent;
+}
+.products .head .btns .btn1{
+  border: 1px solid rgb(0, 0, 0);
+}
+.swiper-js{
+  margin: 5vw 0;
+  height: 70vh;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.swiper-slide {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+.img{
+  width: 100%;
+  height: 65%;
+  position: relative;
+}
+.fav{
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fav i{
+  font-size: 25px;
+  font-weight: 200;
+  cursor: pointer;
+}
+.swiper-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.desc{
+  padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50%;
+
+}
+.desc h5,p,button{
+  
+  text-transform: capitalize;
+}
+.desc button{
+  padding: 7px 30px;
+  background-color: black;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.desc p{
+  color: red;
+
+}
+.desc span{
+  color: black;
+  opacity: 0.4;
+}
+.cartContent{
+  position: fixed;
+  width: 50vw;
+  height: 100vh;
+  background-color: #ffffff2b;
+  z-index: 999;
+  right: -100%;
+  backdrop-filter: blur(7px);
+  
+  top: 0;
+  transition: all 0.6s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.329);
+  
+}
+.cartContent .heading{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.cartContent .items .prods{
+  height: 20%;
+  width: 100%;
+  border-radius: 12px;
+  background-color: rgba(182, 181, 181, 0.411);
+  display: flex;
+  align-items: center;
+ 
+
+}
+.cartContent .items .prods img{
+  object-fit: cover;
+  height: 90%;
+  width: 25%;
+  margin: 0% 3%;
+  border-radius: 12px;
+  object-position: center;
+}
+.cartContent .items{
+  width: 100%;
+  height: 85%;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: hidden;
+  /* Make items draggable along y-axis */
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+}
+.cartContent .items::-webkit-scrollbar {
+  display: none;}
+.cartContent h1{
+  font-size: 34px;
+  color: white;
+}
+.black-bg{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.459);
+  
+  z-index: 998;
+  top: 0;
+  right: -102%;
+  transition: all 0.7s ease-in-out;
+  
+}
+.cartContent .items h5{
+  font-size: 24px;
+  color: white;
+}
