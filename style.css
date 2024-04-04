@@ -29,11 +29,13 @@ input {
   border-radius: 50px;
   border: 1px solid rgba(0, 0, 0, 0.171);
   outline: none;
+  width: 20vw;
 }
 .nav-2 {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .nav-2 i {
@@ -63,6 +65,7 @@ input {
   justify-content: center;
   align-items: center;
   display: none;
+  user-select: none;
 }
 .nav-3 .atc p {
   font-size: 10px;
@@ -88,7 +91,7 @@ input {
   gap: 5%;
 }
 .products .head button {
-  border: 1px solid rgba(0, 0, 0, 0.301);
+  border: 1px solid rgba(0, 0, 0, 0.179);
   padding: 10px 40px;
   border-radius: 50px;
   outline: none;
